@@ -1,0 +1,10 @@
+a mettre dans Assets/textures/StartScreen.png
+
+include/Scenes/Scenes.hpp -> ajouter tout en bas:
+#include "Scenes/StartScreen.hpp"
+
+src/core/Core.cpp -> ligne 19:
+changer AoL::Scenes::MainMenu par AoL::Scenes::StartScreen
+
+CMakeLists.txt -> ajouter:
+src/Scenes/StartScreen.cpp
